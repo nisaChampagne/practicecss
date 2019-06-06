@@ -210,15 +210,21 @@ header {
   justify-content: center;
   align-content: stretch;
 }
-header nav {
+nav {
   font-size: 1.8rem;
+  display: flex;
+  justify-content: space-around;
 }
 h1 {
   font-size: 3rem;
 }
 a {
   font-size: 2rem;
-  justify-content: space-between;
+  padding: 2rem 2.6rem 2rem 2.6rem;
+  border-radius: 5px;
+  border: 1px solid white;
+  text-decoration: none;
+  margin-bottom: 3rem;
 }
 .main-content {
   max-width: 900px;
@@ -239,6 +245,7 @@ a {
 }
 .box {
   margin: 20px 0;
+  border: 2px solid red;
 }
 .skills {
   width: 100%;
@@ -246,13 +253,13 @@ a {
   padding: 20px 0;
 }
 .work {
-  width: 100%;
+  width: 50%;
   padding: 20px 20px;
-  margin: 20px 20px 0 10px;
+  margin: 20px 20px 20px 0x;
 }
 .education {
-  border: 2px solid red;
   width: 100%;
+  padding: 0 auto;
 }
 footer {
   margin: 20px 0;
