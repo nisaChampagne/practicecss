@@ -304,8 +304,6 @@ h1 {
   color: aqua;
 }
 .box .me {
-  width: 105%;
-  border-radius: 8px;
   margin: 0 auto;
 }
 @media (max-width: 500px) {
@@ -326,22 +324,27 @@ h1 {
   font-weight: bold;
   color: aqua;
 }
+.me {
+  border-radius: 8px;
+  border: 2px solid teal;
+}
 .skills {
   width: 100%;
   margin: 0 auto;
   padding: 0 auto;
   justify-content: center;
+  background-image: url('https://images.pexels.com/photos/1307986/pexels-photo-1307986.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940');
 }
 .skills .skills-header {
   color: #09222e;
   font-size: 2.5rem;
   font-weight: bold;
-  background-color: white;
+  background-color: aqua;
   width: 100%;
 }
 .skills .skills-p {
   text-decoration: aqua underline;
-  background-color: white;
+  background-color: aqua;
 }
 /*
 .work{
