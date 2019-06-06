@@ -161,7 +161,7 @@ input[type="submit"]:hover {
 /* Style the container/contact section */
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: teal;
   padding: 10px;
 }
 /* Create two columns that float next to eachother */
@@ -186,9 +186,8 @@ input[type="submit"]:hover {
   }
 }
 html {
-  max-width: 876px;
+  width: 876px;
   font-size: 62.5%;
-  height: 100%;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -200,10 +199,10 @@ html {
 body {
   width: 100%;
   text-align: center;
+  height: 100%;
   background-color: teal;
 }
 header {
-  border-bottom: 3px solid green;
   margin: 20px 0;
   padding: 20px 0;
   display: flex;
@@ -214,6 +213,13 @@ header {
 header nav {
   font-size: 1.8rem;
 }
+h1 {
+  font-size: 3rem;
+}
+a {
+  font-size: 2rem;
+  justify-content: space-between;
+}
 .main-content {
   max-width: 900px;
   margin: 0 auto;
@@ -221,31 +227,34 @@ header nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid green;
+  font-size: 2rem;
 }
 .text-content {
   display: flex;
   flex-wrap: wrap;
-  border: 2px solid purple;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  font-size: 1.8rem;
 }
 .box {
   margin: 20px 0;
 }
 .skills {
-  width: 46%;
+  width: 100%;
   margin: 20px 20px 0 10px;
   padding: 20px 0;
 }
 .work {
-  width: 46%;
+  width: 100%;
   padding: 20px 20px;
   margin: 20px 20px 0 10px;
 }
 .education {
   border: 2px solid red;
+  width: 100%;
 }
 footer {
-  border-bottom: 3px solid green;
   margin: 20px 0;
   padding: 20px 0;
   display: flex;

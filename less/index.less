@@ -172,7 +172,7 @@ input[type="submit"]:hover {
 /* Style the container/contact section */
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: teal;
   padding: 10px;
 }
 
@@ -208,9 +208,8 @@ input[type="submit"]:hover {
 
 
 html{
-  max-width: 876px;
+  width: 876px;
   font-size: 62.5%;
-  height: 100%;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -222,11 +221,11 @@ html{
 body{
   width: 100%;
   text-align: center;
+  height: 100%;
   background-color: teal;
 }
 
 header{
-  border-bottom: 3px solid green;
   margin: 20px 0;
   padding: 20px 0;
   display: flex;
@@ -238,15 +237,13 @@ header{
 header nav{
   font-size: @text-medium;
 }
-
-nav{
+h1{
+  font-size: 3rem;
 }
 
 a{
-}
-
-h1{
-  
+  font-size: @text-big;
+  justify-content: space-between;
 }
 
 .main-content{
@@ -256,35 +253,37 @@ h1{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid green;
+  font-size: 2rem;
 }
 ///inside main content
 .text-content{
   display: flex;
   flex-wrap: wrap;
-  border: 2px solid purple;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  font-size: @text-medium;
 }
 ///inside text-content
 .box{
-  margin: 20px 0;
+  margin: 20px 0
 }
 
 .skills{
-  width: 46%;
+  width: 100%;
   margin: 20px 20px 0 10px;
   padding: 20px 0;
 }
 .work{
-  width: 46%;
+  width: 100%;
   padding: 20px 20px;
   margin: 20px 20px 0 10px;
 }
 .education{
   border: 2px solid red;
-
+  width: 100%;
 }
 footer{
-  border-bottom: 3px solid green;
   margin: 20px 0;
   padding: 20px 0;
   display: flex;
