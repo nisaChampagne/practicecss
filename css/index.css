@@ -295,8 +295,6 @@ h1 {
   margin: 20px 0;
   display: flex;
   align-items: center;
-  background-image: url('https://images.pexels.com/photos/1307986/pexels-photo-1307986.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940');
-  border: 1px solid teal;
   border-radius: 8px;
 }
 .box .box-header {
@@ -339,6 +337,7 @@ h1 {
   font-size: 2.5rem;
   font-weight: bold;
   background-color: white;
+  width: 100%;
 }
 .skills .skills-p {
   text-decoration: aqua underline;
@@ -369,7 +368,7 @@ ul {
 ul li {
   border: 1px solid pink;
   width: 100%;
-  list-style-type: disc;
+  list-style-type: square;
   padding: 10px 0;
   background-color: white;
 }
@@ -380,6 +379,7 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-content: stretch;
+  background-image: url('https://images.pexels.com/photos/1307986/pexels-photo-1307986.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940');
 }
 @media (max-width: 500px) {
   footer {
