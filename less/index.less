@@ -205,6 +205,11 @@ input[type="submit"]:hover {
 @text-medium: 1.8rem;
 @text-small: 1.5rem;
 
+//mixins
+.borderused{
+  border: 25px solid teal;
+} 
+
 
 html{
   width: 876px;
@@ -212,6 +217,12 @@ html{
   margin: 0 auto;
   box-sizing: border-box;
 }
+@media(max-width: 800px){
+  html{
+    width: 100%;
+  }
+}
+
 @media(max-width:500px){
     html{
       width: 100%;
@@ -222,6 +233,12 @@ html{
   max-width: 876px;
   margin: 0 auto;
   font-size: @text-medium;
+}
+@media(max-width:800px){
+  .container{
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 @media(max-width:500px){
@@ -264,15 +281,22 @@ header nav{
   justify-content:space-around;
   a{
     font-size: @text-big;
-    padding: 10px 50px 10px 10px;
-    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 8px;
     border: 1px solid white;
-    background-color: white;
+    background-color: rgb(221, 226, 170);
     text-decoration: none;
-    margin-right: 5px;
+    margin-right: 20px;
     text-align: center;
+    color: teal;
   }
 }
+
+a{
+  text-align: center;
+
+}
+
 h1{
   font-size: 3rem;
 }
@@ -317,20 +341,28 @@ h1{
      .box-intro{
        width: 100%;
        margin: 50px 50px;
-       border: 2px solid red;
       
      }
         .box-word{
           text-decoration: underline;
+          padding-bottom: 20px;
         }
 }
 
 .skills{
   width: 100%;
-  margin: 20px 20px 0 10px;
-  padding: 20px 20px;
-
+  margin: 0 auto;
+  padding: 0 auto;
+  justify-content: center;
+  .skills-header{
+    color: aqua;
+  }
+  .skills-p{
+    text-decoration: aqua underline;
+  }
 }
+
+/*
 .work{
   width: 100%;
   padding: 20px 20px;
@@ -341,23 +373,28 @@ h1{
   margin: 0 auto;
   text-align: center;
 }
+*/
 
 hr{
-  width: 80%;
+  width: 100%;
   border-color:white;
 }
 
 ul{
-  padding-right: 0 auto;
-  margin: 0 0 0 50px;
+  width: 80%;
+  .borderused();
+  margin: 0 auto;
+  text-align: left;
+  li{
+    border: 1px solid pink;
+    width: 100%;
+    list-style-type: disc;
+    padding: 10px 0;
+    background-color: white;
+  }
 }
 
-li{
-  border: 1px solid pink;
-  width: 100%;
-  list-style-type: disc;
-  padding: 20px 20px;
-}
+
 
 footer{
   margin: 20px 0;
@@ -367,10 +404,24 @@ footer{
   justify-content: center;
   align-content: stretch;
 }
+@media(max-width: 500px){
+  footer{
+    flex-direction: column;
+    justify-content: center;
+  }
 
 footer nav {
   font-size: @text-medium;
   display: flex;
   justify-content:space-around;
-
+  a{
+    font-size: @text-big;
+    padding: 10px 10px 10px 10px;
+    border-radius: 8px;
+    border: 1px solid white;
+    background-color:rgb(221, 226, 170);;
+    text-decoration: none;
+    margin-right: 25px;
+    text-align: center;
+  }
 }
