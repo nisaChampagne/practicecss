@@ -191,6 +191,22 @@ html {
   margin: 0 auto;
   box-sizing: border-box;
 }
+@media (max-width: 500px) {
+  html {
+    width: 100%;
+  }
+}
+.container {
+  max-width: 876px;
+  margin: 0 auto;
+  font-size: 1.8rem;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
 *,
 *:before,
 *:after {
@@ -210,7 +226,13 @@ header {
   justify-content: center;
   align-content: stretch;
 }
-nav {
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+header nav {
   font-size: 1.8rem;
   display: flex;
   justify-content: space-around;
@@ -223,8 +245,10 @@ a {
   padding: 10px 50px 10px 10px;
   border-radius: 5px;
   border: 1px solid white;
+  background-color: white;
   text-decoration: none;
-  margin: 0 auto;
+  margin-right: 5px;
+  text-align: center;
 }
 .main-content {
   max-width: 900px;
@@ -259,6 +283,12 @@ a {
   border-radius: 5px;
   margin-left: 50px;
 }
+@media (max-width: 500px) {
+  .box {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .box .box-intro {
   width: 30%;
   margin: 50px 0;
@@ -274,8 +304,7 @@ a {
   margin: 20px 20px 0 10x;
 }
 .education {
-  width: 300%;
-  padding: 0 auto;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
@@ -303,4 +332,6 @@ footer {
 }
 footer nav {
   font-size: 1.8rem;
+  display: flex;
+  justify-content: space-around;
 }

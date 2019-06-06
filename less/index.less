@@ -251,12 +251,12 @@ header{
   align-content: stretch;
 }
 
-@media(max-width: 500px)[
+@media(max-width: 500px){
   header{
     flex-direction: column;
     justify-content: center;
   }
-]
+}
 
 header nav{
   font-size: @text-medium;
@@ -272,9 +272,10 @@ a{
   padding: 10px 50px 10px 10px;
   border-radius: 5px;
   border: 1px solid white;
+  background-color: white;
   text-decoration: none;
-   margin: 0 auto;
-   text-align: center;
+  margin-right: 5px;
+  text-align: center;
 }
 
 .main-content{
@@ -311,6 +312,10 @@ a{
        border-radius: 5px;
        margin-left: 50px;
      }
+     @media(max-width: 500px){
+       flex-direction: column;
+       justify-content: center;
+     }
      .box-intro{
        width: 30%;
        margin: 50px 0;
@@ -329,8 +334,7 @@ a{
   margin: 20px 20px 0 10x;
 }
 .education{
-  width: 300%;
-  padding: 0 auto;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
@@ -363,4 +367,7 @@ footer{
 
 footer nav {
   font-size: @text-medium;
+  display: flex;
+  justify-content:space-around;
+
 }
