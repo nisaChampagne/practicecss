@@ -246,6 +246,17 @@ a {
 .box {
   margin: 20px 0;
   border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box .box-header {
+  border: 2px solid purple;
+  font-size: 4rem;
+}
+.box .me {
+  width: 100%;
+  border-radius: 5px;
 }
 .skills {
   width: 100%;
