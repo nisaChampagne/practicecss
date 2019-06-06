@@ -262,20 +262,19 @@ header nav{
   font-size: @text-medium;
   display: flex;
   justify-content:space-around;
+  a{
+    font-size: @text-big;
+    padding: 10px 50px 10px 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    text-align: center;
+  }
 }
 h1{
   font-size: 3rem;
-}
-
-a{
-  font-size: @text-big;
-  padding: 10px 50px 10px 10px;
-  border-radius: 5px;
-  border: 1px solid white;
-  background-color: white;
-  text-decoration: none;
-  margin-right: 5px;
-  text-align: center;
 }
 
 .main-content{
@@ -300,7 +299,6 @@ a{
 .box{
   margin: 20px 0;
   display: flex;
-  justify-content: center;
   align-items: center;
      .box-header{
        font-size:3.5rem;
@@ -317,9 +315,14 @@ a{
        justify-content: center;
      }
      .box-intro{
-       width: 30%;
-       margin: 50px 0;
+       width: 100%;
+       margin: 50px 50px;
+       border: 2px solid red;
+      
      }
+        .box-word{
+          text-decoration: underline;
+        }
 }
 
 .skills{
