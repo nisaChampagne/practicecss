@@ -186,7 +186,9 @@ input[type="submit"]:hover {
   }
 }
 html {
-  width: 62.5%;
+  max-width: 876px;
+  font-size: 62.5%;
+  height: 100%;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -198,6 +200,7 @@ html {
 body {
   width: 100%;
   text-align: center;
+  background-color: teal;
 }
 header {
   border-bottom: 3px solid green;
@@ -211,9 +214,6 @@ header {
 header nav {
   font-size: 1.8rem;
 }
-a {
-  justify-content: space-evenly;
-}
 .main-content {
   max-width: 900px;
   margin: 0 auto;
@@ -221,6 +221,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 2px solid green;
 }
 .text-content {
   display: flex;
