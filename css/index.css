@@ -260,6 +260,9 @@ a {
   margin-left: 55px;
   border: 1px solid black;
 }
+.box .box-intro {
+  width: 30%;
+}
 .skills {
   width: 100%;
   margin: 20px 20px 0 10px;
@@ -277,7 +280,7 @@ a {
 }
 hr {
   width: 88%;
-  border-color: #45a049;
+  border-color: white;
 }
 ul {
   padding-right: 0 auto;
