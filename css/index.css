@@ -231,6 +231,7 @@ body {
   text-align: center;
   height: 100%;
   background-color: teal;
+  background-image: url('https://images.pexels.com/photos/1307986/pexels-photo-1307986.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940');
 }
 header {
   margin: 20px 0;
@@ -256,11 +257,12 @@ header nav a {
   padding: 10px 10px 10px 10px;
   border-radius: 8px;
   border: 1px solid white;
-  background-color: #dde2aa;
+  background-color: #d2d6a4;
   text-decoration: none;
   margin-right: 20px;
   text-align: center;
-  color: teal;
+  color: #07c9c9;
+  font-weight: bold;
 }
 a {
   text-align: center;
@@ -293,12 +295,13 @@ h1 {
 .box .box-header {
   font-size: 3.5rem;
   font-style: strong;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid aqua;
+  color: aqua;
 }
 .box .me {
-  width: 86%;
+  width: 105%;
   border-radius: 5px;
-  margin-left: 50px;
+  margin: 0 auto;
 }
 @media (max-width: 500px) {
   .box {
@@ -309,10 +312,16 @@ h1 {
 .box .box-intro {
   width: 100%;
   margin: 50px 50px;
+  background-color: teal;
+  color: aqua;
 }
 .box .box-word {
   text-decoration: underline;
   padding-bottom: 20px;
+  color: aqua;
+}
+.me {
+  border: 2px solid aqua;
 }
 .skills {
   width: 100%;
@@ -363,6 +372,12 @@ footer {
   justify-content: center;
   align-content: stretch;
 }
+@media (max-width: 500px) {
+  footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 footer nav {
   font-size: 1.8rem;
   display: flex;
@@ -373,8 +388,10 @@ footer nav a {
   padding: 10px 10px 10px 10px;
   border-radius: 8px;
   border: 1px solid white;
-  background-color: #dde2aa;
+  background-color: #d2d6a4;
   text-decoration: none;
   margin-right: 25px;
   text-align: center;
+  color: #07c9c9;
+  font-weight: bold;
 }
