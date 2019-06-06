@@ -250,18 +250,18 @@ a {
   align-items: center;
 }
 .box .box-header {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-style: strong;
   border-bottom: 1px solid black;
 }
 .box .me {
-  width: 100%;
+  width: 86%;
   border-radius: 5px;
-  margin-left: 55px;
-  border: 1px solid black;
+  margin-left: 50px;
 }
 .box .box-intro {
   width: 30%;
+  margin: 50px 0;
 }
 .skills {
   width: 100%;
@@ -274,12 +274,13 @@ a {
   margin: 20px 20px 0 10x;
 }
 .education {
-  width: 100%;
-  padding: 20px 20px;
-  margin: 20px 20px 0 10x;
+  width: 300%;
+  padding: 0 auto;
+  margin: 0 auto;
+  text-align: center;
 }
 hr {
-  width: 88%;
+  width: 80%;
   border-color: white;
 }
 ul {

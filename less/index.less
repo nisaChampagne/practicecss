@@ -212,6 +212,24 @@ html{
   margin: 0 auto;
   box-sizing: border-box;
 }
+@media(max-width:500px){
+    html{
+      width: 100%;
+    }
+  }
+
+.container{
+  max-width: 876px;
+  margin: 0 auto;
+  font-size: @text-medium;
+}
+
+@media(max-width:500px){
+  .container{
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
 
 *, *:before, *:after{
   box-sizing: inherit;
@@ -233,7 +251,14 @@ header{
   align-content: stretch;
 }
 
-nav{
+@media(max-width: 500px)[
+  header{
+    flex-direction: column;
+    justify-content: center;
+  }
+]
+
+header nav{
   font-size: @text-medium;
   display: flex;
   justify-content:space-around;
@@ -249,6 +274,7 @@ a{
   border: 1px solid white;
   text-decoration: none;
    margin: 0 auto;
+   text-align: center;
 }
 
 .main-content{
@@ -276,18 +302,18 @@ a{
   justify-content: center;
   align-items: center;
      .box-header{
-       font-size:4rem;
+       font-size:3.5rem;
        font-style: strong;
        border-bottom: 1px solid black;
      }
      .me{
-       width: 100%;
+       width: 86%;
        border-radius: 5px;
-       margin-left: 55px;
-       border: 1px solid black;
+       margin-left: 50px;
      }
      .box-intro{
        width: 30%;
+       margin: 50px 0;
      }
 }
 
@@ -303,13 +329,14 @@ a{
   margin: 20px 20px 0 10x;
 }
 .education{
-  width: 100%;
-  padding: 20px 20px;
-  margin: 20px 20px 0 10x;
+  width: 300%;
+  padding: 0 auto;
+  margin: 0 auto;
+  text-align: center;
 }
 
 hr{
-  width: 88%;
+  width: 80%;
   border-color:white;
 }
 
