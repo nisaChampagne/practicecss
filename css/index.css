@@ -149,14 +149,17 @@ textarea {
   resize: vertical;
 }
 input[type="submit"] {
-  background-color: #4caf50;
-  color: white;
+  background-color: #d2d6a4;
+  color: #09222e;
   padding: 12px 20px;
   border: none;
+  font-weight: bold;
+  font-size: 2rem;
+  border-radius: 8px;
   cursor: pointer;
 }
 input[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: teal;
 }
 /* Style the container/contact section */
 .container {
@@ -186,7 +189,7 @@ input[type="submit"]:hover {
   }
 }
 .borderused {
-  border: 25px solid teal;
+  border: 2px solid teal;
 }
 html {
   width: 876px;
@@ -208,6 +211,8 @@ html {
   max-width: 876px;
   margin: 0 auto;
   font-size: 1.8rem;
+  background-color: #09222e;
+  background-image: url('https://images.pexels.com/photos/1307986/pexels-photo-1307986.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940');
 }
 @media (max-width: 800px) {
   .container {
@@ -230,8 +235,7 @@ body {
   width: 100%;
   text-align: center;
   height: 100%;
-  background-color: teal;
-  background-image: url('https://images.pexels.com/photos/1307986/pexels-photo-1307986.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-color: #09222e;
 }
 header {
   margin: 20px 0;
@@ -261,7 +265,7 @@ header nav a {
   text-decoration: none;
   margin-right: 20px;
   text-align: center;
-  color: #07c9c9;
+  color: #09222e;
   font-weight: bold;
 }
 a {
@@ -291,6 +295,9 @@ h1 {
   margin: 20px 0;
   display: flex;
   align-items: center;
+  background-image: url('https://images.pexels.com/photos/1307986/pexels-photo-1307986.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940');
+  border: 1px solid teal;
+  border-radius: 8px;
 }
 .box .box-header {
   font-size: 3.5rem;
@@ -300,7 +307,7 @@ h1 {
 }
 .box .me {
   width: 105%;
-  border-radius: 5px;
+  border-radius: 8px;
   margin: 0 auto;
 }
 @media (max-width: 500px) {
@@ -312,16 +319,14 @@ h1 {
 .box .box-intro {
   width: 100%;
   margin: 50px 50px;
-  background-color: teal;
-  color: aqua;
+  color: white;
 }
 .box .box-word {
   text-decoration: underline;
   padding-bottom: 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
   color: aqua;
-}
-.me {
-  border: 2px solid aqua;
 }
 .skills {
   width: 100%;
@@ -330,10 +335,14 @@ h1 {
   justify-content: center;
 }
 .skills .skills-header {
-  color: aqua;
+  color: #09222e;
+  font-size: 2.5rem;
+  font-weight: bold;
+  background-color: white;
 }
 .skills .skills-p {
   text-decoration: aqua underline;
+  background-color: white;
 }
 /*
 .work{
@@ -349,11 +358,11 @@ h1 {
 */
 hr {
   width: 100%;
-  border-color: white;
+  border-color: #09222e;
 }
 ul {
   width: 80%;
-  border: 25px solid teal;
+  border: 2px solid teal;
   margin: 0 auto;
   text-align: left;
 }
@@ -392,6 +401,6 @@ footer nav a {
   text-decoration: none;
   margin-right: 25px;
   text-align: center;
-  color: #07c9c9;
+  color: #09222e;
   font-weight: bold;
 }
